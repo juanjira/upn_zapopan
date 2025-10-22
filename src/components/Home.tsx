@@ -16,7 +16,7 @@ export const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div>
             <Badge className="mb-6 bg-white/20 backdrop-blur-sm text-white border-white/30 px-4 py-2 text-sm">
-              🎓 Excelencia Educativa desde 1998
+              🎓 Excelencia Educativa desde 1978
             </Badge>
             <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Transforma el Futuro
@@ -40,7 +40,7 @@ export const Home = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 backdrop-blur-sm"
+                className="border-2 border-white text-blue-900 hover:bg-white/50 text-lg px-8 py-6 backdrop-blur-sm cursor-pointer"
               >
                 Solicita Información
               </Button>

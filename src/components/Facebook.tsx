@@ -54,10 +54,11 @@ export const Facebook = () => {
                   </h3>
                   <div className="space-y-4">
                     <iframe 
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1222132301479847&tabs=timeline&width=0&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
-                        width="100%" 
-                        height="400"                                                 
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1222132301479847&tabs=timeline&width=0&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=4155796647968899" 
+                      width="0" 
+                      height="0"                            
+                      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">                        
+                      </iframe>
                   </div>
                 </CardContent>
               </Card>

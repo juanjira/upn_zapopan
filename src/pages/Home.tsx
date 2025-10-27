@@ -197,7 +197,7 @@ export default function Home() {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center gap-8">
-              {["Inicio", "Programas", "Admisión", "Nosotros", "Contacto"].map((item) => (
+              {["Inicio", "Programas", "Nosotros", "Contacto"].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
@@ -239,7 +239,7 @@ export default function Home() {
               className="md:hidden bg-white shadow-xl"
             >
               <div className="px-4 py-6 space-y-4">
-                {["Inicio", "Programas", "Admisión", "Nosotros", "Contacto"].map((item) => (
+                {["Inicio", "Programas", "Nosotros", "Contacto"].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
@@ -799,40 +799,6 @@ export default function Home() {
 
       {/* Mapa */}
       <MapComponent />
-
-      {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl" />
-        </div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              ¿Listo para Comenzar tu Futuro?
-            </h2>
-            <p className="text-xl text-white/90 mb-10">
-              Únete a la comunidad de profesionales de la educación más comprometidos del país
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-6 shadow-2xl"
-              >
-                Iniciar Proceso de Admisión
-                <ChevronRight className="ml-2" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6 backdrop-blur-sm"
-              >
-                Agendar una Visita
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">

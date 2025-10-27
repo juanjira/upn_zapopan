@@ -32,6 +32,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import MapComponent from "@/components/MapComponent";
 
 import logo from '../img/logo_ok.png'
+import campus from '../assets/upn145.webp'
 import home from "@/assets/event-2.jpg";
 import Banner from "@/components/Banner";
 import BlurText from "@/components/BlurText";
@@ -420,8 +421,8 @@ export default function Home() {
               className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=1000&fit=crop"
+                <img                  
+                  src={campus}
                   alt="Campus"
                   className="w-full h-[600px] object-cover"
                 />
@@ -841,7 +842,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
-                Formando educadores de excelencia desde 1998
+                Formando educadores de excelencia desde 1978
               </p>
             </div>
 

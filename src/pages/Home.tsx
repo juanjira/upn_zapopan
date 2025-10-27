@@ -55,14 +55,21 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleTextAreaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  }
+
+  const handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.");
     setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
@@ -688,7 +695,7 @@ export default function Home() {
                         id="mensaje"
                         name="mensaje"
                         value={formData.mensaje}
-                        onChange={handleInputChange}
+                        onChange={handleTextAreaChange}
                         required
                         placeholder="Cuéntanos en qué podemos ayudarte..."
                         className="min-h-32"

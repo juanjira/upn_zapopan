@@ -6,9 +6,10 @@ import { Button } from "@/components/ui/button";
 import event1 from "@/assets/event-1.jpg";
 import event2 from "@/assets/event-2.jpg";
 import event3 from "@/assets/event-3.jpg";
+import event4 from "@/assets/event-4.jpg";
 
-export const EventsBanner = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
+export default function Banner() {
+ const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, duration: 20 },
     [Autoplay({ delay: 10000, stopOnInteraction: false })]
   );
@@ -19,8 +20,8 @@ export const EventsBanner = () => {
   const events = [
     {
       image: event1,
-      title: "Conferencias Educativas 2025",
-      description: "Espacios de aprendizaje y desarrollo profesional"
+      title: "Dia de muertos 2025",
+      description: ""
     },
     {
       image: event2,
@@ -31,6 +32,11 @@ export const EventsBanner = () => {
       image: event3,
       title: "Ceremonia de Graduación",
       description: "Celebrando el éxito de nuestros egresados"
+    },
+     {
+      image: event4,
+      title: "Promoción deportiva",
+      description: ""
     }
   ];
 
@@ -97,4 +103,4 @@ export const EventsBanner = () => {
       </div>
     </section>
   );
-};
+}

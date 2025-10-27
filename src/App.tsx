@@ -1,24 +1,13 @@
-import { Header } from './components/Header'
-import { Footer } from './components/Footer'
-import { Home } from './components/Home'
-import { EventsBanner } from './components/EventsBanner'
-import { Facebook } from './components/Facebook'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 
+import Home from './pages/Home'
 
 function App() {
   
-
   return (
-    <div className="min-h-screen">
-     <Header />    
-     <main>
-      <Home />   
-      <EventsBanner />
-      <Facebook />
-     </main>     
-     <Footer />
-    </div>
-
+    <Home />
   )
 }
 

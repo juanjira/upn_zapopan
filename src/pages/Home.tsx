@@ -34,6 +34,7 @@ import MapComponent from "@/components/MapComponent";
 import logo from '../img/logo_ok.png'
 import home from "@/assets/event-2.jpg";
 import Banner from "@/components/Banner";
+import BlurText from "@/components/BlurText";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -162,24 +163,24 @@ export default function Home() {
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           scrolled 
-            ? "bg-white/95 backdrop-blur-lg shadow-lg" 
+            ? "bg-gradient-to-br from-[#9C1882] to-[#542AAE]/60 backdrop-blur-lg shadow-xl" 
             : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-stone-100 to-stone-300 rounded-xl flex items-center justify-center shadow-lg">
-                <img src={logo} alt="UPN 145" />
+              <div className="w-14 h-14 bg-gradient-to-br from-stone-100 to-stone-300 rounded-xl flex items-center justify-center shadow-lg">
+                <img src={logo} alt="UPN 145" className="w-12"/>
               </div>
               <div>
-                <h1 className={`text-xl font-bold transition-colors ${
-                  scrolled ? "text-gray-900" : "text-white"
+                <h1 className={`text-2xl font-bold transition-colors text-shadow-lg/70 ${
+                  scrolled ? "text-[#FB0149] " : "text-white"
                 }`}>
                   UPN 145 Zapopan
                 </h1>
-                <p className={`text-xs transition-colors ${
-                  scrolled ? "text-gray-600" : "text-white/90"
+                <p className={`text-xl transition-colors text-shadow-lg/30 text-shadow-[#9C1882] ${
+                  scrolled ? "text-white/90" : "text-white/90"
                 }`}>
                   Universidad Pedagógica
                 </p>
@@ -192,9 +193,9 @@ export default function Home() {
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className={`font-medium transition-all hover:scale-105 ${
+                  className={`font-medium transition-all hover:scale-105 text-shadow-lg/30 ${
                     scrolled 
-                      ? "text-gray-700 hover:text-blue-600" 
+                      ? "text-[#FFF] hover:text-[#FB0149]" 
                       : "text-white hover:text-blue-200"
                   }`}
                 >
@@ -267,10 +268,11 @@ export default function Home() {
             </Badge>
             <h2 className="text-base md:text-4xl font-bold text-white mb-6 leading-tight">
               
-              <span className="bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
+              <span className="text-[#FB0149] text-shadow-lg/90 text-shadow-white">
                  Formamos profesionales de la educación comprometidos con la transformación social 
                 y el desarrollo integral de la persona.
-              </span>
+              </span> 
+             
             </h2>
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -316,10 +318,7 @@ export default function Home() {
       {/* Programas Section */}
       <section id="admision" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div                        
             className="text-center mb-16"
           >
             <Badge className="mb-4 bg-blue-100 text-blue-700 px-4 py-2">
@@ -383,7 +382,7 @@ export default function Home() {
                 Liderando la Educación en Guadalajara
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                La Universidad Pedagógica Nacional Unidad 141 es una institución de educación superior 
+                La Universidad Pedagógica Nacional Unidad 145 es una institución de educación superior 
                 pública, comprometida con la formación de profesionales de la educación de excelencia.
               </p>
               <div className="space-y-4 mb-8">
@@ -498,7 +497,7 @@ export default function Home() {
               Únete a Nuestra Comunidad
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Forma parte del grupo de Facebook de UPN 141 y mantente conectado con estudiantes, 
+              Forma parte del grupo de Facebook de UPN 145 y mantente conectado con estudiantes, 
               profesores y eventos de la universidad
             </p>
           </div>
@@ -607,7 +606,7 @@ export default function Home() {
           {/* Testimonios de la comunidad */}
           <div className="text-center">
             <p className="text-white/90 text-lg italic max-w-3xl mx-auto">
-              "El grupo de Facebook de UPN 141 ha sido fundamental para mantenerme informado y conectado 
+              "El grupo de Facebook de UPN 145 ha sido fundamental para mantenerme informado y conectado 
               con la comunidad universitaria. ¡Totalmente recomendado!"
             </p>
             <p className="text-white/70 mt-4">- María González, Estudiante de Pedagogía</p>
@@ -718,12 +717,15 @@ export default function Home() {
                         <MapPin className="w-6 h-6 text-blue-600" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-gray-900 mb-2">Dirección</h4>
-                        <p className="text-gray-600">
-                          Luis Manuel Rojas No. 2001 <br />
-                          C.P 45180, Colonia La Palmita, Zapopan, Jalisco <br />
-                          México
-                        </p>
+                        <h4 className="font-bold text-gray-900 mb-2">Dirección</h4>                        
+                        <BlurText
+                          text="Luis Manuel Rojas No. 2001 
+                                C.P 45180, Colonia La Palmita, Zapopan, Jalisco, México"
+                          delay={150}
+                          animateBy="words"
+                          direction="top"                            
+                          className="text-gray-600"
+                        />                          
                       </div>
                     </div>
                   </CardContent>
@@ -834,8 +836,8 @@ export default function Home() {
                   <GraduationCap className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold">UPN 141</h3>
-                  <p className="text-sm text-gray-400">Guadalajara</p>
+                  <h3 className="text-lg font-bold">UPN 145</h3>
+                  <p className="text-sm text-gray-400">Zapopan</p>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">

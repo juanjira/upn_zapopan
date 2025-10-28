@@ -30,7 +30,7 @@ export default function Home() {
 
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen overflow-hidden max-w-full bg-white ">
       {/* Navegación */}
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -123,7 +123,7 @@ export default function Home() {
       </nav>
 
       {/* HOME Section */}
-      <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden max-w-full">
+      <section id="inicio" className="relative h-screen flex items-center justify-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{

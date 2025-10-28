@@ -37,8 +37,10 @@ export default function FaceBook() {
             <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-3xl mb-6 shadow-2xl">
               <Facebook className="w-10 h-10 text-blue-600" />              
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Únete a Nuestra Comunidad
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <span className="title-gradient">
+                Únete a Nuestra Comunidad
+              </span>
             </h2>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Forma parte del grupo de Facebook de UPN 145 y mantente conectado con estudiantes, 

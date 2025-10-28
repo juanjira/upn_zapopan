@@ -1,4 +1,5 @@
-import { GraduationCap, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
+import logo from '../img/logo_ok.png'
 
 export default function Footer() {
     return(
@@ -9,8 +10,8 @@ export default function Footer() {
             <div className="grid md:grid-cols-4 gap-12 mb-12">
                 <div>
                 <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center">
-                    <GraduationCap className="w-7 h-7 text-white" />
+                    <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center">                    
+                        <img src={logo} alt="UPN 145" className="w-12"/>
                     </div>
                     <div>
                     <h3 className="text-lg font-bold">UPN 145</h3>

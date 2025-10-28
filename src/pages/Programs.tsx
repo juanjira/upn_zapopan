@@ -47,8 +47,10 @@ export default function Programs() {
           <div                        
             className="text-center mb-16"
           >    
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Nuestros Programas Académicos
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <span className="title-gradient">
+                Nuestros Programas Académicos
+              </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Programas de licenciatura y posgrado diseñados para formar líderes educativos del futuro

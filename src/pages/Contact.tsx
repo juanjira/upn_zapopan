@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge,Send,Clock,MapPin,Phone,Mail    } from "lucide-react"
+import { Send,Clock,MapPin,Phone,Mail    } from "lucide-react"
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -47,12 +47,11 @@ export default function Contact() {
       {/* Contacto Section */}
       <section id="contacto" className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Badge className="mb-4 bg-blue-100 text-blue-700 px-4 py-2">
-              Estamos Aquí Para Ti
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Contáctanos
+          <div className="text-center mb-16">                     
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <span className="title-gradient">
+                Contáctanos
+              </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               ¿Tienes preguntas? Nos encantaría escucharte. Completa el formulario o visítanos en nuestras instalaciones.
@@ -151,8 +150,7 @@ export default function Contact() {
                       <div>
                         <h4 className="font-bold text-gray-900 mb-2">Dirección</h4>                        
                         <BlurText
-                          text="Luis Manuel Rojas No. 2001 
-                                C.P 45180, Colonia La Palmita, Zapopan, Jalisco, México"
+                          text="Luis Manuel Rojas No. 2001 C.P 45180, Colonia La Palmita, Zapopan, Jalisco, México"
                           delay={150}
                           animateBy="words"
                           direction="top"                            
@@ -171,9 +169,13 @@ export default function Contact() {
                       </div>
                       <div>
                         <h4 className="font-bold text-gray-900 mb-2">Teléfono</h4>
-                        <p className="text-gray-600">
-                          3336604850 / 3336664430
-                        </p>
+                        <BlurText
+                          text="3336604850 / 3336664430"
+                          delay={150}
+                          animateBy="words"
+                          direction="top"                            
+                          className="text-gray-600"
+                        />                        
                       </div>
                     </div>
                   </CardContent>
@@ -186,10 +188,14 @@ export default function Contact() {
                         <Mail className="w-6 h-6 text-purple-600" />
                       </div>
                       <div>
-                        <h4 className="font-bold text-gray-900 mb-2">Email</h4>
-                        <p className="text-gray-600">
-                          lidiana.nieves@jaliscoedu.mx
-                        </p>
+                        <h4 className="font-bold text-gray-900 mb-2">Email</h4>                        
+                        <BlurText
+                          text="lidiana.nieves@jaliscoedu.mx"
+                          delay={150}
+                          animateBy="words"
+                          direction="top"                            
+                          className="text-gray-600"
+                        />
                       </div>
                     </div>
                   </CardContent>

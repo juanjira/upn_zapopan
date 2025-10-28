@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Award, Badge, Target } from "lucide-react";
+import { Award, Target } from "lucide-react";
 import campus from '../assets/upn145.webp'
 
 export default function About() {
@@ -10,14 +10,12 @@ export default function About() {
         <section id="nosotros" className="py-24 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
-                    <div>
-                    
-                    <Badge className="mb-4 bg-blue-100 text-blue-700 px-4 py-2">
-                        Nuestra Institución
-                    </Badge>
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                        Liderando la Educación en Zapopan
-                    </h2>
+                    <div>                   
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                        <span className="title-gradient">
+                            Liderando la Educación en Zapopan
+                        </span>
+                    </h2>                    
                     <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                         La Universidad Pedagógica Nacional Unidad 145 es una institución de educación superior 
                         pública, comprometida con la formación de profesionales de la educación de excelencia.

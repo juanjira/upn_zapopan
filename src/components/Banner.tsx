@@ -7,6 +7,7 @@ import event1 from "@/assets/event-1.jpg";
 import event2 from "@/assets/event-2.jpg";
 import event3 from "@/assets/event-3.jpg";
 import event4 from "@/assets/event-4.jpg";
+import TextType from "./TextType";
 
 export default function Banner() {
  const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -45,13 +46,21 @@ export default function Banner() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-t from-purple-300 to-violet-700 bg-clip-text text-5xl font-extrabold text-transparent">
+            <span className="title-gradient">
               Eventos y Actividades
             </span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Conoce las actividades y eventos que forman parte de nuestra comunidad universitaria
-          </p>
+          {/* <p className="text-lg text-muted-foreground">
+            
+          </p> */}
+          <TextType 
+            text={["Conoce las actividades y eventos que forman parte de nuestra comunidad universitaria"]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+            className="paragraph-gradient"
+          />
         </div>
 
         <div className="relative max-w-6xl mx-auto">
@@ -66,14 +75,18 @@ export default function Banner() {
                         alt={event.title}
                         className="w-full h-full object-cover rounded-4xl"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-violet-500/95 via-purple-100/50 to-violet-400/30" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#FB0149]/95 via-[#9C1882]/20 to-[#542AAE]/10 rounded-4xl" />
                       <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 text-foreground">
-                          {event.title}
-                        </h3>
-                        <p className="text-lg text-foreground/80">
-                          {event.description}
-                        </p>
+                 
+                        <TextType 
+                          text={[event.title, event.description]}
+                          typingSpeed={75}
+                          pauseDuration={1500}
+                          showCursor={true}
+                          cursorCharacter="|"
+                          className="paragraph-banner"
+                        />
+
                       </div>
                     </div>
                   </Card>

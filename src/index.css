@@ -10,3 +10,10 @@
 .paragraph-banner {
   @apply text-white text-2xl font-medium;
 }
+
+h3.title{
+  @apply text-xl text-[#542AAE];
+}
+p.desc{
+  @apply text-xl text-[#9C1882] max-w-7xl mx-auto text-justify;
+}

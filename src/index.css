@@ -10,3 +10,10 @@
 .paragraph-banner {
   @apply text-white text-2xl font-medium;
 }
+
+h3.list{ @apply text-[#542AAE] text-2xl font-semibold; }
+p.list{ @apply p-2;}
+
+ul.list{
+  @apply list-none list-inside ml-8;
+}

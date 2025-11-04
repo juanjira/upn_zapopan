@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
+
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge, Calendar, Facebook, MessageCircle, Share2, ThumbsUp, Users } from "lucide-react"
+import { Badge,  Facebook, MessageCircle, ThumbsUp} from "lucide-react"
 
 export default function FaceBook() {
 
@@ -88,64 +88,14 @@ export default function FaceBook() {
             {/* CTA para unirse */}
             <div className="flex flex-col justify-center">
               <Card className="bg-white shadow-2xl border-0">
-                <CardContent className="p-8">
-                  <div className="text-center mb-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                      <Users className="w-8 h-8 text-white" />                      
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                      Más de 5,000 Miembros
-                    </h3>
-                    <p className="text-gray-600">
-                      Estudiantes, egresados y docentes conectados
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 mb-8">
-                    <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Share2 className="w-5 h-5 text-blue-600" />                        
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Comparte Experiencias</h4>
-                        <p className="text-sm text-gray-600">Intercambia ideas y conocimientos con la comunidad</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Calendar className="w-5 h-5 text-purple-600" />                        
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Eventos Exclusivos</h4>
-                        <p className="text-sm text-gray-600">Entérate de eventos, talleres y conferencias</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <MessageCircle className="w-5 h-5 text-green-600" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-1">Networking</h4>
-                        <p className="text-sm text-gray-600">Conecta con profesionales y expande tu red</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <a 
-                    href="https://www.facebook.com/groups/1222132301479847" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block"
-                  >                    
-                    <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg py-6">
-                      <Facebook className="w-5 h-5 mr-2" />
-                      Únete al Grupo de Facebook
-                    </Button>
-                  </a>
-                  <p className="text-center text-sm text-gray-500 mt-4">
-                    Es gratis y toma solo un momento
-                  </p>
-                </CardContent>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1222132301479847&tabs=timeline&width=0&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=847499914480735" 
+                  width="0" 
+                  height="0"                    
+                  className="border-0 overflow-hidden"
+                  scrolling="no" 
+                  frameborder="0" 
+                  allowfullscreen="true" 
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
               </Card>
             </div>
           </div>

@@ -6,36 +6,40 @@ export default function Programs() {
     
       const programas = [
         {
-        titulo: "Licenciatura en Pedagogía",
-        duracion: "4 años",
-        modalidad: "Presencial / En línea",
-        descripcion: "Forma profesionales capaces de diseñar, implementar y evaluar proyectos educativos innovadores.",
-        icono: <GraduationCap className="w-8 h-8" />,
-        color: "from-blue-500 to-indigo-600"
+          titulo: "Licenciatura en Pedagogía",
+          duracion: "4 años",
+          modalidad: "Presencial / En línea",
+          descripcion: "Forma profesionales capaces de diseñar, implementar y evaluar proyectos educativos innovadores.",
+          icono: <GraduationCap className="w-8 h-8" />,
+          color: "from-blue-500 to-indigo-600",
+          link:'/pedagogia'
         },
         {
-        titulo: "Licenciatura en Administración Educativa",
-        duracion: "4 años",
-        modalidad: "Presencial / Mixta",
-        descripcion: "Desarrolla líderes en gestión y dirección de instituciones educativas.",
-        icono: <Briefcase className="w-8 h-8" />,
-        color: "from-purple-500 to-pink-600"
+          titulo: "Licenciatura en Administración Educativa",
+          duracion: "4 años",
+          modalidad: "Presencial / Mixta",
+          descripcion: "Desarrolla líderes en gestión y dirección de instituciones educativas.",
+          icono: <Briefcase className="w-8 h-8" />,
+          color: "from-purple-500 to-pink-600",
+          link:'/administracion-educativa'
         },
         {
-        titulo: "Licenciatura en Psicología Educativa",
-        duracion: "4 años",
-        modalidad: "Presencial",
-        descripcion: "Especialistas en el desarrollo psicológico y procesos de aprendizaje.",
-        icono: <Users className="w-8 h-8" />,
-        color: "from-emerald-500 to-teal-600"
+          titulo: "Licenciatura en Psicología Educativa",
+          duracion: "4 años",
+          modalidad: "Presencial",
+          descripcion: "Especialistas en el desarrollo psicológico y procesos de aprendizaje.",
+          icono: <Users className="w-8 h-8" />,
+          color: "from-emerald-500 to-teal-600",
+          link:'/psicologia-educativa'
         },
         {
-        titulo: "Maestría en Educación",
-        duracion: "2 años",
-        modalidad: "En línea / Mixta",
-        descripcion: "Posgrado de excelencia para la investigación y práctica educativa avanzada.",
-        icono: <Award className="w-8 h-8" />,
-        color: "from-orange-500 to-red-600"
+          titulo: "Maestría en Educación",
+          duracion: "2 años",
+          modalidad: "En línea / Mixta",
+          descripcion: "Posgrado de excelencia para la investigación y práctica educativa avanzada.",
+          icono: <Award className="w-8 h-8" />,
+          color: "from-orange-500 to-red-600",
+          link:'/maestria-en-educacion'
         }
     ];
 
@@ -83,10 +87,9 @@ export default function Programs() {
                     <p className="text-gray-600 mb-6 leading-relaxed">
                       {programa.descripcion}
                     </p>
-                    <Button variant="ghost" className="text-blue-600 hover:text-blue-700 p-0 h-auto font-semibold group-hover:gap-3 gap-2 transition-all">
-                      Más información
-                      <ChevronRight className="w-4 h-4" />
-                    </Button>                    
+                    <a href={programa.link} className="text-blue-600 hover:text-blue-700 p-0 h-auto font-semibold group-hover:gap-3 gap-2 transition-all">
+                      Más información 
+                    </a>                    
                   </CardContent>
                 </Card>
               </div>
